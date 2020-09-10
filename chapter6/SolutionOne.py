@@ -25,8 +25,8 @@ method.
 
 """
 
-
 def printTable(data, init, final, ans):
+    data = returnData(data)
     arr = []
     if init >= final:
         return 0
@@ -34,13 +34,33 @@ def printTable(data, init, final, ans):
         for i in data:
             arr.append(len(i[init]))
             arr.sort()
-
-            ans += i[init].ljust(arr[-1]) + ' '
-            
+            ans += i[init] + ' '
         ans += '\n'
         
         print(ans)
         return printTable(data, init + 1, final, '')
+
+
+def returnData(data):
+    ans = ''
+    arr = []
+    for x in data:
+        maxLengthNumber = maxLenght(x)
+        arrtemp = []
+        for i in range(0, len(x)):
+            arrtemp.append(x[i].rjust(maxLengthNumber))
+        ans += '\n'
+        arr.append(arrtemp)
+    
+    return arr
+        
+
+def maxLenght(array):
+    arr = []
+    for i in array:
+        arr.append(len(i))
+    arr.sort()
+    return arr[-1]
 
     
 
