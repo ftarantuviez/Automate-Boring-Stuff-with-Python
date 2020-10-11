@@ -1,0 +1,5 @@
+{
+  "python.formatting.provider": "autopep8",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2
+}
