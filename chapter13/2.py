@@ -33,6 +33,7 @@ def hack_password(file):
     else:
       continue
   
+  english_dictionary.close()
   print('Still hacking hahaha ;)')
 
 
