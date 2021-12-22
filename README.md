@@ -3,7 +3,7 @@
 
 Book to understand the basics and more complex concepts about Python and the Object Oriented Programming Paradigm.
 
-Here you learn how to:
+Wrote code to do the following tasks:
 
 - Search for text in a file or across multiple files
 - Create, update, move, and rename files and folders
